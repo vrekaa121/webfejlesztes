@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinkler Réka">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="description" content="Kitalált kávézó weboldala">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@300;700&family=Rubik:wght@300;400&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
+    <title>Latte Lounge</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myform").validate({
+                rules: {
+                    vezeteknev: "required",
+                    keresztnev: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    szuletesi_datum: "required",
+                    telefonszam: "required",
+                    workshop: "required",
+                },
+                messages: {
+                    vezeteknev: "<br>Kötelező a vezetéknév megadása!",
+                    keresztnev: "<br>Kötelező a keresztnév megadása!",
+                    email: {
+                        required: "<br>Kötelező valós email cím megadása!",
+                        email: "<br>Nem jó a formátum!",
+                    },
+                    szuletesi_datum: "<br>Kötelező megadni a születési dátumot!",
+                    telefonszam: "<br>Kötelező a telefonszám megadása!",
+                    workshop: "<br>Válassz workshopot!",
+                },
+            });
+        });
+    </script>
+    <style>
+        label.error {
+            color: #e04444;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="kisokos.html">Kisokos</a></li>
+            <li><a href="#" id="current">Workshopok</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <header class="title">
+        <h2>Workshopok</h2>
+    </header>
+    <div class="container">
+        <article class="text-content">
+            <h2>Kezdő Barista Workshop</h2>
+            <p>Ha szereted a kávét, és mindig is érdekeltek a kávészakma titkai, akkor itt a helyed! A Kezdő Barista
+                Workshophoz csatlakozva elmerülhetsz a kávézás művészetében és tudományában. Tapasztalt baristáink
+                segítségével megtanulhatod, hogyan készítsd el a tökéletes eszpresszót, hogyan habosítsd fel a tejet a
+                latte arthoz.<br>
+                A workshop során nem csak elméleti tudást szerezhetsz, hanem gyakorlati tapasztalatokat is
+                professzionális kávégépek használatával kapcsolatban. Készülj fel arra, hogy egy új világ tárul fel
+                előtted, és megtapasztalhatod, hogy a kávés művészet nem csak szakma, hanem szenvedély is.<br>
+                Gyere, csatlakozz hozzánk, és hagyd, hogy a kávé szeretete összekapcsoljon bennünket a Latte Lounge-ban!
+            </p>
+        </article>
+        <figure class="image-content"><img src="images/kezdo_barista2.jpg" alt="kávészemek és darált kávé"></figure>
+        <div class="container reversed">
+            <article class="text-content">
+                <h2>Haladó Barista Workshop</h2>
+                <p>Ha szeretnél a kávézás mestereinek sorába lépni, akkor ez a workshop neked szól! <br>
+                    Ez a workshop mélyebben ás a kávészakma rejtelmeibe, és lehetőséget teremt arra, hogy olyan tudást
+                    szerezz, amely egy tapasztalt barista szakértelmét tükrözi.
+                    Itt nem csak a kávé elkészítési technikáit tanulhatod meg, hanem a kávészemek eredetétől kezdve a
+                    pörkölés művészetéig és az ízek harmóniájáig minden fontos részletre kiterjedő ismereteket
+                    szerezhetsz. Gyakorlati tréningjeink során különböző kávéfajtákat, pörkölési profilokat és
+                    különleges kávékészítési módszereket fedezhetsz fel. <br>
+                    A Haladó Barista Workshopon részt venni azt jelenti, hogy készen állsz arra, hogy ne csak egy italt
+                    készíts, hanem egy kávéélményt teremts. Hozd magaddal a szenvedélyed és nyitottságod, és készülj
+                    arra, hogy az itt megszerzett tudást otthoni kávézódban is kamatoztathasd. <br>
+                    Gyere, és mélyítsük el együtt a kávé szeretetét és tudományát a Haladó Barista Workshopon!</p>
+            </article>
+            <figure class="image-content"><img src="images/halado_barista.jpg" alt="haladó barista kávé készítés"></figure>
+        </div>
+        <article class="text-content">
+            <h2>Latte Art Workshop</h2>
+            <p>Ez a Latte Art Workshop több, mint egyszerű kurzus - itt a kávéművészet rejtelmeibe pillanthatsz be.
+                Kezedben a lehetőség, hogy megtanuld, hogyan varázsolhatsz egy egyszerű kávéból lenyűgöző
+                műalkotást, ahol a tejhab nem csak díszítés, hanem kifejező eszköz.<br>
+                Az oktatóink tapasztalt kávéművészek, akik szívesen osztják meg a latte art titkait. Megismerheted a
+                különböző tejhabkészítési technikákat, a legnépszerűbb mintákat, és tanulhatsz arról, hogyan adj
+                hozzá személyes stílust a kávé művészetéhez.<br>
+                Gyere, tölts velünk egy napot és hagyd, hogy a kávé ne csak ízével, hanem látványával is
+                elvarázsoljon a Latte Art Workshop-on!</p>
+        </article>
+        <figure class="image-content"><img src="images/latteart2.jpg" alt="latte art"></figure>
+        <div class="container reversed">
+            <article class="text-content">
+                <h2>Kávékóstoló Workshop</h2>
+                <p>Csatlakozz hozzánk egy izgalmas kávékóstoló utazásra, ahol a kávé nem csak ital, hanem valódi élmény.
+                    A Kávékóstoló Workshopunkon lehetőséged lesz felfedezni kávéink különböző zamatvilágait, és
+                    megismerni azokat a finom részleteket, amelyek egy jó kávét nagyszerűvé tesznek. <br>
+                    Tapasztalt kávészakértőink segítségével bebarangoljuk a különböző kávéfajták eredetét, a pörkölés
+                    művészetét és az ízprofilok rejtelmeit. Próbáld ki az egyedi pörköléseinket, és ismerd meg, hogyan
+                    határozzuk meg a kávé minőségét és karakterét.Ez a workshop nem csak az ízlelőbimbóidat kényezteti
+                    el, hanem mélyebb betekintést nyújt a kávé világába. <br>
+                    Csatlakozz hozzánk, és fedezd fel a kávézás új dimenzióit a Latte Lounge-ban!</p>
+            </article>
+            <figure class="image-content"><img src="images/kave_kostolo2.jpg" alt="különböző kávék"></figure>
+        </div>
+    </div>
+    <article class="quote">
+        <h2>Jelentkezés</h2>
+    </article>
+    <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="myform" novalidate class="container">
+        <article class="text-content not-justify">
+            <p><label>Vezetéknév: <input type="text" name="vezeteknev"></label></p>
+            <p><label>Keresztnév: <input type="text" name="keresztnev"></label></p>
+            <p><label>Születési dátum: <input type="date" name="szuletesi_datum"></label></p>
+            <p><label>E-mail cím: <input type="email" name="email"></label></p>
+            <p><label>Telefonszám: <input type="tel" name="telefonszam" value="06-"></label></p>
+        </article>
+        <article class="text-content not-justify">
+            <p><label>Melyik workshopon szeretne résztvenni?<br>
+                    <select name="workshop" size="1">
+                        <option disabled selected>Válassz</option>
+                        <option value="kezdo">Kezdő barista</option>
+                        <option value="halado">Haladó barista</option>
+                        <option value="art">Latte art</option>
+                        <option value="kostol">Kávékóstoló</option>
+                    </select></label></p>
+            <p><label>Volt már korábban nálunk workshopon?</label><br>
+                <label><input type="radio" name="korabban" value="igen">Igen</label><br>
+                <label><input type="radio" name="korabban" value="nem">Nem</label>
+            </p>
+            <p><label>Hány kávét iszik meg egy nap?<br>
+                    <input type="number" min="0" max="10" name="naponta"></label></p>
+            <p><input type="submit" value="Elküldés"></p>
+        </article>
+    </form>
+    <footer>Nem valós kávézó. &nbsp; &copy; Vinkler Réka 2023</footer>
+</body>
+
+</html>

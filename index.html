@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinkler Réka">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="description" content="Kitalált kávézó weboldala">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@300;700&family=Rubik:wght@300;400&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
+    <title>Latte Lounge</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="galleria/galleria.min.js"></script>
+    <script src="galleria/themes/classic/galleria.classic.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#galleria').galleria({
+                height: 700
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="current">Főoldal</a></li>
+            <li><a href="kisokos.html">Kisokos</a></li>
+            <li><a href="workshop.html">Workshopok</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    <header class="title">
+        <h1>Latte Lounge</h1>
+    </header>
+    <div class="container">
+        <article class="text-content">
+            <h2>Üdvözöljük a Latte Lounge-ban!</h2>
+            <p>A Latte Lounge egy oázis a kávé szerelmeseinek, ahol minden csésze egy történet, és minden korty egy
+                utazás. Szívünk a frissen pörkölt kávéé, és elkötelezettek vagyunk abban, hogy a legjobb minőségű
+                kávékülönlegességekkel kényeztessük vendégeinket.</p>
+            <p>De a Latte Lounge nem csak a kávéról szól - hangulatos környezetünk ideális helyszínt kínál a baráti
+                találkozókhoz, munka utáni pihenéshez vagy akár egy kis olvasáshoz is. Friss sütemények, pazar
+                teaspecialitások és különleges hideg italok is várják, hogy felfedezd őket.</p>
+            <p>Gyere, ülj le, és élvezd a Latte Lounge kényeztető atmoszféráját! Itt a kávé nem csupán ital, hanem
+                élmény.</p>
+        </article>
+        <figure class="image-content">
+            <img src="images/kavezo.jpg" alt="kávézó interior">
+        </figure>
+    </div>
+    <article class="quote">
+        <h2>"Nincs a világon olyan probléma, amit ne oldana meg egy csésze kávé!"</h2>
+        <p>Beck Tamás</p>
+    </article>
+    <h2 class="centered-title">Munkatársaink</h2>
+    <article id="galleria">
+        <img src="images/barista1.jpg" alt="A kezdő barista workshop egyik oktatója" title="Tóth Lia">
+        <img src="images/barista2.jpg" alt="A kávékóstoló workshop vezetője" title="Horváth Olivér">
+        <img src="images/barista3.jpg" alt="A haladó barista workshop oktatója" title="Nagy Krisztián">
+        <img src="images/barista4.jpg" alt="A latteart workshop oktatója" title="Szabó Félix">
+        <img src="images/barista5.jpg" alt="A kezdő barista workshop másik oktatója" title="Kocsis Mia">
+    </article>
+    <div class="container infos arrangement">
+        <article class="text-content infobox">
+            <h2>Elérhetőségeink</h2>
+            <p>Telefonszám: 4-444-4444</p>
+            <p>E-mail cím: lattelounge@kavezo.hu</p>
+            <p>Helyszín: Budapest, Latte utca 1.</p>
+        </article>
+        <article class="text-content infobox">
+            <h2>Nyitvatartás</h2>
+            <p>Hétfő - Péntek:</p>
+            <p>7:00 - 20:00</p>
+            <p>Szombat - Vasárnap:</p>
+            <p>8:00 - 21:00</p>
+        </article>
+    </div>
+    <footer>Nem valós kávézó. &nbsp; &copy; Vinkler Réka 2023</footer>
+</body>
+
+</html>

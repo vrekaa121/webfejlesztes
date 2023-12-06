@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinkler Réka">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <meta name="description" content="Kitalált kávézó weboldala">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@300;700&family=Rubik:wght@300;400&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
+    <title>Latte Lounge</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="kisokos.html">Kisokos</a></li>
+            <li><a href="workshop.html">Workshopok</a></li>
+            <li><a href="#" id="current">Quiz</a></li>
+        </ul>
+    </nav>
+    <header class="title">
+        <h2>Coffee Quiz</h2>
+    </header>
+    <div class="container">
+        <article>
+            <h2>Teszteld tudásodat a szórakoztató kávés kvízünkkel! Sok sikert!</h2>
+        </article>
+        <form action="#">
+            <p>1. Mi a neve annak a kávés italnak, amely 1/3-ad arányban tartalmaz espressot, gőzölt tejet és tejhabot?
+            </p>
+            <label><input type="radio" name="kerdes1" id="helyes1">Cappuccino</label><br>
+            <label><input type="radio" name="kerdes1">Latte</label><br>
+            <label><input type="radio" name="kerdes1">Mocha</label><br>
+            <label><input type="radio" name="kerdes1">Cortado</label><br>
+            <h3 id="valasz1"></h3>
+            <p>2. Hány gramm őrölt kávét használnak fel a valódi olasz espresso készítéséhez?</p>
+            <label><input type="number" min="0" max="300" step="1" id="helyes2"></label><br>
+            <h3 id="valasz2"></h3>
+            <p>3. Mi a legfőbb különbség az espresso és a ristretto között?</p>
+            <label><input type="radio" name="kerdes3">Az ristretto nagyobb mennyiség, mint az espresso</label><br>
+            <label><input type="radio" name="kerdes3" id="helyes3">A ristretto kevesebb vízzel készül</label><br>
+            <label><input type="radio" name="kerdes3">Az espresso nem tartalmaz tejet, a ristretto igen</label><br>
+            <label><input type="radio" name="kerdes3">Az espresso kevesebb vízzel készül</label><br>
+            <h3 id="valasz3"></h3>
+            <p>4. Mi a kávé fő hatóanyaga? (csupa kisbetűvel írd)</p>
+            <label><input type="text" size="15" id="helyes4"></label><br>
+            <h3 id="valasz4"></h3>
+            <p>5. Mi a neve annak a kávéitalnak, amely forró vízzel hígított espresso?</p>
+            <label><input type="radio" name="kerdes5">Latte Macchiato</label><br>
+            <label><input type="radio" name="kerdes5">Cappuccino</label><br>
+            <label><input type="radio" name="kerdes5" id="helyes5">Americano</label><br>
+            <label><input type="radio" name="kerdes5">Flat White</label><br>
+            <h3 id="valasz5"></h3>
+            <p>6. A felsoroltak közül melyek tartalmaznak tejet?</p>
+            <label><input type="checkbox" id="helytelen6_1">Espresso</label><br>
+            <label><input type="checkbox" id="helyes6_1">Latte Macchiato</label><br>
+            <label><input type="checkbox" id="helyes6_2">Cappuccino</label><br>
+            <label><input type="checkbox" id="helyes6_3">Flat White</label><br>
+            <label><input type="checkbox" id="helytelen6_2">Ristretto</label><br>
+            <label><input type="checkbox" id="helyes6_4">Café Latte</label><br>
+            <label><input type="checkbox" id="helytelen6_3">Americano</label><br>
+            <h3 id="valasz6"></h3>
+            <p>7. Mikor van a kávé világnapja?</p>
+            <label><select id="lista" size="1">
+                    <option disabled selected>Válassz</option>
+                    <option>Július 8.</option>
+                    <option id="helyes7">Szeptember 29.</option>
+                    <option>Március 20.</option>
+                    <option>Január 14.</option>
+                </select></label><br>
+            <h3 id="valasz7"></h3>
+            <p>8. Melyik ország a világ legjelentősebb kávétermelője?</p>
+            <label><input type="radio" name="kerdes9">Olaszország</label><br>
+            <label><input type="radio" name="kerdes9">Etiópia</label><br>
+            <label><input type="radio" name="kerdes9">Kolumbia</label><br>
+            <label><input type="radio" name="kerdes9" id="helyes8">Brazília</label><br>
+            <h3 id="valasz8"></h3>
+            <p>9. Milyen színű az érett kávészem, amelyet leszüretelnek? (csupa kisbetűvel írd)</p>
+            <label><input type="text" size="15" id="helyes9"></label><br>
+            <h3 id="valasz9"></h3>
+            <p>10. Hanyadik században érkezett meg Európába a kávézás szokása?</p>
+            <label><input type="radio" name="kerdes10">13. század</label><br>
+            <label><input type="radio" name="kerdes10">15. század</label><br>
+            <label><input type="radio" name="kerdes10" id="helyes10">17. század</label><br>
+            <label><input type="radio" name="kerdes10">20. század</label><br><br>
+            <h3 id="valasz10"></h3>
+            <input type="button" value="Értékelés" id="ertekeles"> &nbsp; &nbsp;
+            <h2 id="eredmeny"></h2>
+        </form>
+    </div>
+    <script src="quiz.js"></script>
+    <footer>Nem valós kávézó. &nbsp; &copy; Vinkler Réka 2023</footer>
+</body>
+
+</html>
