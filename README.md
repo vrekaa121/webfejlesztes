@@ -3,7 +3,7 @@ A webfejlesztés tantárgy beadandója
 
 1. Az oldal készítője: Vinkler Réka
 
-2. Weblap URL címe:
+2. Weblap URL címe: https://vrekaa121.github.io/webfejlesztes/
 
 3. Rövid ismertető: A weboldal egy kitalált kávézóról szól. Megtekinthetők rajta a kávézó által tartott workshopok, lehet olvasni az alap kávéfajtékról, valamint egy kávés quizzel lehet tudásunkat tesztelni.
 
